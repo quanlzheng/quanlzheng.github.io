@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Task-driven Webpage Saliency</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="In this paper, we present an end-to-end learning framework for predicting task-driven visual saliency on webpages. Given a webpage, we propose a convolutional neural network to predict where people look at it under different task conditions. Inspired by the observation that given a specific task, human attention is strongly correlated with certain semantic components on a webpage (e.g., images, buttons and input boxes), our network explicitly disentangles saliency prediction into two independent sub-tasks: task-specific attention shift prediction and task-free saliency prediction. The task-specific branch estimates task-driven attention shift over a webpage from its semantic components, while the task-free branch infers visual saliency induced by visual features of the webpage. The outputs of the two branches are combined to produce the final prediction. Such a task decomposition framework allows us to efficiently learn our model from a small-scale task-driven saliency dataset with sparse labels (captured under a single task condition). Experimental results show that our method outperforms the baselines and prior works, achieving state-of-the-art performance on a newly collected benchmark dataset for task-driven webpage saliency detection.">
+<meta name="keywords" content="Webpage analysis; Saliency detection; Task-specific saliency;">
+<meta name="keywords" content="Quanlong Zheng; 郑全龙; Computer Vision;">
+<link rel="author" href="https://quanlzheng.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./Task-driven Webpage Saliency/css" rel="styles<!-- heet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Task-driven Webpage Saliency/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./Task-driven Webpage Saliency/iconize.css">
+<!-- <script async="" src="./Talking Face Generation by Adversarially Disentangled Audio-Visual Representation_files/prettify.js.download"></script> -->
+ 
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Task-driven Webpage Saliency</h1>
+
+	<div class="authors">
+	  <a href="https://quanlzheng.github.io/">Quanlong Zheng</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.cs.cityu.edu.hk/~jianbjiao2/">Jiaobo JIao</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ying-cao.com/">Ying Cao</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson Lau</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="affiliations">
+
+	  <p>City University of Hong Kong</p>
+	</div>
+
+	<!-- <div class="venue">Preprint Manuscript (<a href="https://arxiv.org/" target="_blank">Arxiv</a>) 2018</div> -->
+      </div>
+      
+      <center><img src="./Task-driven Webpage Saliency/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+In this paper, we present an end-to-end learning framework for predicting task-driven visual saliency on webpages. Given a webpage, we propose a convolutional neural network to predict where people look at it under different task conditions. Inspired by the observation that given a specific task, human attention is strongly correlated with certain semantic components on a webpage (e.g., images, buttons and input boxes), our network explicitly disentangles saliency prediction into two independent sub-tasks: task-specific attention shift prediction and task-free saliency prediction. The task-specific branch estimates task-driven attention shift over a webpage from its semantic components, while the task-free branch infers visual saliency induced by visual features of the webpage. The outputs of the two branches are combined to produce the final prediction. Such a task decomposition framework allows us to efficiently learn our model from a small-scale task-driven saliency dataset with sparse labels (captured under a single task condition). Experimental results show that our method outperforms the baselines and prior works, achieving state-of-the-art performance on a newly collected benchmark dataset for task-driven webpage saliency detection
+	</p>
+      </div>
+
+
+      
+
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/Hangz-nju-cuhk/Talking-Face-Generation-DAVS" target="_blank" class="imageLink"><img src="./Task-driven Webpage Saliency/code.png"></a><br>
+		  <a href="https://github.com/quanlzheng/Task-driven-Webpage-Saliency" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{zheng2018taskWebSaliency,
+ author={Quanlong Zheng, Jianbo Jiao, Ying Cao, Rynson Lau},
+ title={Task-driven Webpage Saliency},
+ booktitle = {Proceedings of European Conference on Computer Vision (ECCV)},
+ month = {September},
+ year = {2018} 
+}</pre>
+	  </div>
+      </div>
+
+</div></div></body></html>
