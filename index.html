@@ -17,9 +17,12 @@ p { font-size : 16px; }
 h1 { font-size : 34px; margin : 0; padding : 0; }
 h2 { font-size : 20px; margin : 0; padding : 0; }
 h3 { font-size : 18px; margin : 8; padding : 0; }
+td { padding: 10px; line-height: normal; background-color: white; }
+table { border: 0; margin: 10px 10px 30px 0px; border-collapse: separate; border-spacing: 0px; background-color: white; }
+/*tr {margin-bottom : 20px; }*/
 body { padding : 0; font-family : Arial; font-size : 16px; background-color : #ddd; }
-.title { width : 750px; margin : 30px auto; border-radius: 10px; background-color : #fff;padding : 20px;}
-.container { width : 750px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
+.title { width : 900px; margin : 30px auto; border-radius: 10px; background-color : #fff;padding : 20px;}
+.container { width : 900px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
 #bio {
     padding-top : 20px;
 }
@@ -28,12 +31,20 @@ body { padding : 0; font-family : Arial; font-size : 16px; background-color : #d
 a { text-decoration : none; }
 a:hover { text-decoration : underline; }
 a, a:visited { color : #0050e7; }
-.publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
-.publication { clear : left; padding-bottom : 80px;}
+.publogo { width: 100 px; margin-right : 0px; float : left; border : 0;}
+/*.publication { clear : left; padding-bottom : 10px;}*/
+.publication {}
 .publication p { height : 100px; padding-top : 5px;}
 .publication strong a { color : #0000A0; }
-.publication .links { position : relative; top : 15px }
-.publication .links a { margin-right : 20px; }
+.links { position : relative; top : 15px }
+.links a { margin-right : 20px; }
+
+.paperTitle{ font-style: bold; margin-bottom: 1em;}
+
+.authors{margin-bottom: 0.5em;}
+
+.avenue{font-style: italic; margin-bottom: 0.3em;}
+
 .codelogo { margin-right : 10px; float : left; border : 0;}
 .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
 .code .download a { display : block; margin : 0 15px; float : left;}
@@ -70,11 +81,6 @@ a, a:visited { color : #0050e7; }
 
 			</p>
 
-
-
-<!--             <p class="external">
-                <a href="https://github.com/quanlzheng" class="first">GitHub</a>
-            </p> -->
 		</div>
 	</div>
 
@@ -82,7 +88,7 @@ a, a:visited { color : #0050e7; }
 		<!-- <HR size=2> -->
 		<h2>Short Bio</h2>
 		<p>
-			I am currently a Phd student at <a href="http://www.cityu.edu.hk/">City Unversity of HongKong</a>, supervised by <a href="http://www.cs.cityu.edu.hk/~rynson/">Prof. Rysnon Lau</a>. My research interests lie in computer vision and deep learning. 
+			I am currently a Phd student at <a href="http://www.cityu.edu.hk/">City Unversity of HongKong</a>, supervised by <a href="http://www.cs.cityu.edu.hk/~rynson/">Prof. Rysnon Lau</a>. Before that, I received my bachelor degree in <a href="https://www.buaa.edu.cn/">Beihang University</a> (BUAA). My research interests lie in computer vision and deep learning. 
             <br>
 		</p>
 	</div>
@@ -90,76 +96,64 @@ a, a:visited { color : #0050e7; }
 
 	<div class="container">
 		<h2>Publications</h2>
+        <table>
+            <tbody>
+            <tr>
 
-                <div class="publication">
-            <img src="./homepage_files/DSDNet.png" class="publogo" width="240 px">
-            <p> 
-                <strong>
-                    <a href="./projects/Distraction-aware-Shadow-Detection.html">Distraction-aware Shadow Detection</a>
-                </strong>
-                <br>
-                <br>
-                Quanlong Zheng, Xiaotian Qiao, Ying Cao, Rynson Lau.
-                <br>
-                <br>
-                <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019</em>
-                <br>
-                <br>
+            <td align="center"><img src="./homepage_files/shadow_detection_2019.png" class="publogo" width="240 px"></td>
+            <td>
+                <div class="paperTitle"><a href="./projects/Distraction-aware-Shadow-Detection.html">Distraction-aware Shadow Detection</a></div>
+                <div class="authors"><strong>Quanlong Zheng</strong>, Xiaotian Qiao, Ying Cao, Rynson Lau.</div>
+                <div class="avenue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019</div>
                 <span class="links">
                     <a href="./projects/Distraction-aware-Shadow-Detection/3109.pdf">PDF</a>
                     <a href="./projects/Distraction-aware-Shadow-Detection.html">Project Page</a>
                 </span>
-            </p>
-        </div>
 
-        <div class="publication">
-            <img src="./homepage_files/ContextPred.png" class="publogo" width="240 px">
-            <p> 
-                <strong>
-                    <a href="">Tell Me Where I Am: Object-level Scene Context Prediction</a>
-                </strong>
-                <br>
-                <br>
-                Xiaotian Qiao, Quanlong Zheng, Ying Cao, Rynson Lau.
-                <br>
-                <br>
-                <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (<strong>Oral</strong>)</em>
-                <br>
-                <br>
+            </td>
+        </tr>
+    
+        <tr>
+
+            <td align="center"><img src="./homepage_files/context_prediction_2019.png" class="publogo" width="240 px"></td>
+
+            <td>
+                <div class="paperTitle">
+                    <a href="https://xtqiao.com/projects/object2scene/">Tell Me Where I Am: Object-level Scene Context Prediction</a>
+                </div>
+
+                <div class="authors">Xiaotian Qiao, <strong>Quanlong Zheng</strong>, Ying Cao, Rynson Lau.</div>
+
+                <div class="avenue">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 (<strong>Oral</strong>)</div>
+
                 <span class="links">
-                    <a href="">PDF</a>
-                    <a href="">Project Page</a>
+                    <a href="./homepage_files/context_prediction_cvpr2019.pdf">PDF</a>
+                    <a href="https://xtqiao.com/projects/object2scene/">Project Page</a>
                 </span>
-            </p>
-        </div>
+            </td>
+        </tr>
 
 
-		<div class="publication">
-			<img src="./homepage_files/webpage_saliency2.png" class="publogo" width="240 px">
-            <p> 
-                <strong>
-                    <a href="./projects/Task-driven-Webpage-Saliency.html">Task-driven Webpage Saliency</a>
-                </strong>
-                <br>
-                <br>
-                Quanlong Zheng, Jianbo Jiao, Ying Cao, Rynson Lau.
-                <br>
-                <br>
-                <em>European Conference on Computer Vision (ECCV), 2018</em>
-                <br>
-                <br>
+        <tr>
+		    <td align="center"><img src="./homepage_files/webpage_saliency2.png" class="publogo" width="240 px"></td>
+            <td>
+                <div class="paperTitle"><a href="./projects/Task-driven-Webpage-Saliency.html">Task-driven Webpage Saliency</a></div>
+
+                <div class="authors"><strong>Quanlong Zheng</strong>, Jianbo Jiao, Ying Cao, Rynson Lau.</div>
+                <div class="avenue">European Conference on Computer Vision (ECCV), 2018</div>
                 <span class="links">
                     <a href="./projects/Task-driven-Webpage-Saliency/1672.pdf">PDF</a>
                     <a href="./projects/Task-driven-Webpage-Saliency.html">Project Page</a>
                 </span>
-            </p>
-        </div>
+            </td>
 
 
+        </tr>
+    </tbody>
 
-
-
+</table>
 		
-	</div>
+</div>
+
 
 </body>
