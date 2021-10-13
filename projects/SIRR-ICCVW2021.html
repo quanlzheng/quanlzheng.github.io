@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Distilling Reflection Dynamics for Single-Image Reflection Removal</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="">
+<meta name="keywords" content="Shadow; Detection;">
+<meta name="keywords" content="Quanlong Zheng; 郑全龙; Computer Vision;">
+<link rel="author" href="https://quanlzheng.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./css/css" rel="styles<!-- heet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./css/iconize.css">
+<script async="" src="./css/prettify.js.download"></script>
+ 
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Distilling Reflection Dynamics for Single-Image Reflection Removal</h1>
+
+	<div class="authors">
+	  <a href="https://quanlzheng.github.io/">Quanlong Zheng</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://xtqiao.com/">Xiaotian Qiao</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ying-cao.com/">Ying Cao</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://scholar.google.com/citations?user=5hsEmuQAAAAJ">Shi Guo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://www4.comp.polyu.edu.hk/~cslzhang/">Lei Zhang</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson Lau</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="affiliations">
+
+	  <p>OPPO Research, City University of Hong Kong, The Hong Kong Polytechnic University, DAMO Academy, Alibaba Group</p>
+	</div class='section teaser'>
+
+	<!-- <div class="venue">Preprint Manuscript (<a href="https://arxiv.org/" target="_blank">Arxiv</a>) 2018</div> -->
+      </div>
+      
+      <center><img src="./SIRR-ICCVW2021/teaser.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+		Single-image reflection removal (SIRR) aims to restore the transmitted image given a single image shot through glass or window. Existing methods rely mainly on information extracted from a single image along with some pre-defined priors, and fail to give satisfying results on real-world images, due to inherent ambiguity and lack of large and diverse real-world training data. In this paper, instead of reasoning about a single image only, we propose to distill a representation of reflection dynamics from multi-view images (i.e., the motions of reflection and transmission layers over time), and transfer the learned knowledge for the SIRR problem. In particular, we propose a teacher-student framework where the teacher network learns a representation of reflection dynamics by watching a sequence of multi-view images of a scene captured by a moving camera and teaches a student network to remove reflection from a single input image. In addition, we collect a large real-world multi-view reflection image dataset for reflection dynamics knowledge distillation. Extensive experiments show that our model yields state-of-the-art performances.
+	</p>
+      </div>
+
+
+      
+
+
+<div class="section architecture">
+	<h2>Architecture</h2>
+	<br>
+	<center><img src="./SIRR-ICCVW2021/Architecture.png" border="0" width="90%"></center>
+</div>
+
+
+<div class="section architecture">
+	<h2>MKL Module</h2>
+	<br>
+	<center><img src="./SIRR-ICCVW2021/mkl_module.png" border="0" width="90%"></center>
+</div>
+
+
+
+
+
+<div class="section download">
+
+	<h2>Downloads</h2>
+<!-- <HR size=2> -->
+
+<ul>
+	<li>
+		  <a href="./SIRR-ICCVW2021/18.pdf" target="_blank">Paper</a>
+	</li>
+	<li>
+		  <a href="./SIRR-ICCVW2021/18-supp.pdf" target="_blank">Supp.</a>
+	</li>
+
+	<li>
+		  <a href="./SIRR-ICCVW2021/poster.pdf" target="_blank">Poster</a>
+	</li>
+
+	<!-- <li>
+		  <a href="https://drive.google.com/open?id=1cQD7kdwfnP5HhSAhk-rSjayKz7i2t0Tq" target="_blank">Results</a>
+	</li> -->
+	<!-- <li>
+		  <a href="https://drive.google.com/open?id=18hv6NAQsST1UsabtNvfM_G-qR-nAbgaa" target="_blank">Codes</a>
+	</li>
+	<li>
+		  <a href="https://drive.google.com/open?id=1-YnAGDzn5GqYfZDLZ4NHZy-TWstwFg_S" target="_blank">Models</a>
+	</li> -->
+	<li>
+		  <a href="" target="_blank">Seq1K Dataset</a>
+	</li>
+
+
+
+
+
+<!-- 	<li>
+		  <a href="" target="_blank">Model (Coming soon)</a>
+	</li> -->
+
+		<!-- <li>
+		  <a href="" target="_blank">Result (Coming soon)</a>
+	</li>
+	<li>
+		  <a href="" target="_blank">Poster (Coming soon)</a>
+	</li> -->
+
+
+</ul>
+</div>
+
+
+
+
+
+
+
+
+<br>
+
+<div class="section citation">
+
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@InProceedings{Zheng_2021_ICCV,
+	author = {Zheng, Quanlong and Qiao, Xiaotian and Cao, Ying and Guo, Shi and Zhang, Lei and Lau, Rynson W.H.},
+	title = {Distilling Reflection Dynamics for Single-Image Reflection Removal},
+	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+	month = {October},
+	year = {2021},
+	pages = {1886-1894}
+	}
+	  </pre>
+	  </div>
+      </div>
+
+</div></div></body></html>
